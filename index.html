@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>虚拟货币俄罗斯方块</title>
+		<link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="keywords" content="比特币,虚拟货币,莱特币,bitcoin,游戏,俄罗斯方块"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+	</head>
+	<body>
+		<div id="center">
+			<div id="tip">
+				<div><a href="https://hitop.github.io" style="display: inline-block;width: 130px;background: #fff;height: 42px;font-size: 24px;text-decoration: none;text-align: center;color: #009ec4;border-radius: 19px;line-height: 38px;margin-bottom: 24px;">回首页</a></div>
+				<p>控制 ： ↑ ↓ ← →</p>
+				<p>暂停 ： 空格</p>
+				<div class='button' onclick="window.location.reload()"><p>重新开始</p></div>
+				<div id="music">
+					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=52 src="//music.163.com/outchain/player?type=0&id=71198452&auto=0&height=32"></iframe>
+				</div>
+			</div>
+			<div id="tetris">
+				<div id="info">
+					<div id="next_shape"> </div>
+					<p id="level">当前难度: <span></span></p>
+					<p id="lines">消除行数: <span></span></p>
+					<p id="score">目前得分: <span></span></p>
+					<p id="time">已用时间: <span></span></p>
+				</div>
+				<div id="canvas"></div>
+			</div>
+			<div id="ggbitcoin">
+				<p ><span>当前比特币价格：</span><span id="btcprice">更新中~~~</span><br><small>（数据来源：<a href="https://blockchain.info" target="_blank">blockchain.info</a> )</small></p>
+				<p id="freebtc"><a href="https://www.douban.com/note/613903101/" target="_blank">如何获取免费比特币</a></p>
+			</div><br>
+		</div>
+		<div class="controls" id="game-buttons">
+			<!-- OLD Buttons -->
+			<div>
+				<span id="up" class="controlButton">&uarr;</span>
+			</div>
+			<div>
+				<span id="left" class="controlButton">&larr;</span>
+				<span id="down" class="controlButton">&darr;</span>
+				<span id="right" class="controlButton">&rarr;</span>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

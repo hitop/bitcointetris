@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #d7d7d7;
+}
+#tetris {
+    display: inline-block;
+    width: 360px;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 12px;
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+}
+#canvas {
+    width: 200px;
+    height: 440px;
+    background-color: #e4444e;
+    position: relative;
+    color: #fff;
+}
+#canvas h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 200px;
+    }
+.piece {
+    border: 1px solid white;
+    position: absolute;
+    }
+.square {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 0px solid white;
+}
+.type0 { background-image: url('../img/BTC_logo.png');}    
+.type1 { background-image: url('../img/DOGE_logo.png');}     
+.type2 { background-image: url('../img/LTC_logo.png');} 
+.type3 { background-image: url('../img/PPC_logo.png');} 
+.type4 { background-image: url('../img/NXT_logo.png');} 
+.type5 { background-image: url('../img/BCC_logo.png');} 
+.type6 { background-image: url('../img/ETH_logo.png');}
+
+#next_shape {
+    position: relative;
+    background-color: #424662;
+    border: 0px solid white;
+    width: 124px;
+    height: 110px;
+}
+#info {
+    background-color: #009ec4;
+    color: #fff;
+    float: right;
+    width: 124px;
+    height: 420px;
+    padding: 10px;
+}
+
+.button{width: 84px;height: 30px;background-color: #009ec4;display: inline-block;}
+.button p{margin-top: 5px;color: white;font-size: 18px;text-align: center;}
+.button:hover{cursor: pointer;} 
+
+#center{margin: 20px 32px;}
+#tip{display: inline-block;}
+#tip p{color:red;font-size:18px;font-weight:bold}
+#music {margin-top: 180px;}
+
+#freebtc{margin-top: 24px;}
+
+
+#ggbitcoin{
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 32px;
+}
+
+#ggbitcoin a {
+    color: #2f2fd8;
+    text-decoration: none;
+}
+
+/*controls */
+.controls {text-align: center; margin-top: 60px;}
+.controlButton {
+    display: inline-block;
+    color: white;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    background: none repeat scroll 0% 0% #C80A0A;
+    /*line-height: 70px;*/
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 60px;
+    cursor: pointer;
+}
+.controlButton:hover, .controlButton:active {
+    background: #c00202;
+}
+
+@media screen and (max-width: 400px) {
+    .controlButton {
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        font-size: 40px;
+    }
+    .controls-right .controlButton { right: -55%; }
+    /*canvas#myCanvas { margin: 5px auto; } */
+}
+
+/*test*/
+.ku{background-color: #23f;width: 20px;height: 20px;position: absolute;}
